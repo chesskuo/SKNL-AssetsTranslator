@@ -2,6 +2,7 @@
 
 * **ROOT MUST**
 * **Win10 x64** only
+* **Prohibit Reproduce to Forums Without Permission.**
 
 # Manual
 
