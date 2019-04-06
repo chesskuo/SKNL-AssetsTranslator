@@ -5,6 +5,7 @@
 * **Prohibit Reproduce to Forums Without Permission.**
 
 # Manual
+> Just chosing only one way to decompress
 
 * SKNL-PNGgen
   1. Find `/data/data/<apk_name>/cache/` on your Android Device.
