@@ -1,0 +1,26 @@
+#Quickbms Script
+#by chrrox
+#http://aluigi.altervista.org/quickbms.htm
+comtype LZSS0
+get zsize asize
+get size long
+math zsize -= 4
+if SIZE & 0x80000000
+log MEMORY_FILE 4 zsize
+else
+clog MEMORY_FILE 4 zsize size
+endif
+get files short MEMORY_FILE
+goto 0 MEMORY_FILE
+for i = 0 < files
+get null short MEMORY_FILE
+get type short MEMORY_FILE
+get offset long MEMORY_FILE
+get size long MEMORY_FILE
+get id long MEMORY_FILE
+get name basename
+getdstring name2 0x30 MEMORY_FILE
+string name + \
+string name + name2
+log name2 offset size MEMORY_FILE
+next i
